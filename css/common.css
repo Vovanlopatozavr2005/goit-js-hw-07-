@@ -1,0 +1,333 @@
+/* ================================================================================================================== */
+#categories {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.64px;
+  gap: 24px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 16px;
+  border-radius: 8px;
+  background: #f6f6fe;
+  max-width: 392px;
+}
+
+.item > h2 {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 133.333%;
+  letter-spacing: 0.96px;
+  margin: 0 0 16px 0;
+}
+
+.item,
+.item-list-element {
+  list-style-type: none;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0;
+
+  gap: 8px;
+}
+
+.item-list-element {
+  display: flex;
+
+  align-items: center;
+  width: 360px;
+  height: 40px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+  padding-left: 16px;
+}
+
+.item-list-element:hover {
+  border: 1px solid #000;
+}
+
+/* Task 2 */
+/* ================================================================================================================== */
+.gallery {
+  display: flex;
+
+  flex-wrap: wrap;
+  list-style-type: none;
+
+  padding: 100px 156px;
+
+  width: 1128px;
+  margin: 0;
+  row-gap: 48px;
+  column-gap: 24px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gallery-item {
+  display: flex;
+  flex-wrap: wrap;
+  width: calc((100% - 48px) / 3);
+}
+
+.gallery-item-image {
+  object-fit: cover;
+}
+
+/* Task 3 */
+/* ================================================================================================================== */
+#name-input,
+.welcome-text {
+  margin: 24px 24px;
+}
+
+#name-input,
+#name-input:active {
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+  margin-bottom: 16px;
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  padding-left: 16px;
+}
+
+#name-input:hover,
+#name-input:focus {
+  border: 1px solid #000;
+}
+
+.welcome-text {
+  margin-top: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 133.333%;
+  letter-spacing: 0.96px;
+}
+
+/* Task 4 */
+/* ================================================================================================================== */
+.login-form,
+[type="submit"] {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  font-weight: 400;
+  max-width: 320px;
+  margin: 24px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login-form label {
+  margin-top: 8px;
+}
+
+.login-form label:first-child {
+  margin-bottom: 8px;
+}
+
+[type="submit"] {
+  font-family: inherit;
+  font-weight: 500;
+  color: #fff;
+
+  border-radius: 8px;
+  border-color: transparent;
+  background-color: #4e75ff;
+
+  display: flex;
+  margin: 0 0;
+  margin-top: 16px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 86px;
+  height: 40px;
+}
+
+[type="submit"]:hover,
+[type="submit"]:focus {
+  background-color: #6c8cff;
+}
+
+[type="email"]:active,
+[type="password"]:active,
+[type="email"],
+[type="password"] {
+  margin-top: 8px;
+  width: 360px;
+  height: 40px;
+  border-radius: 4px;
+  border: 1px solid #808080;
+}
+
+[type="email"]:hover,
+[type="email"]:focus,
+[type="password"]:hover,
+[type="password"]:focus {
+  border: 1px solid #000;
+}
+
+/* Task 5 
+==================================================================================================================  */
+
+.widget {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.change-color {
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  display: flex;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border-color: transparent;
+  background-color: #4e75ff;
+  cursor: pointer;
+  max-height: 40px;
+  max-width: 148px;
+}
+
+.change-color:hover,
+.change-color:focus {
+  background-color: #6c8cff;
+}
+
+.widget > p {
+  position: relative;
+}
+
+.color {
+  position: fixed;
+}
+
+/* Task 6 
+==================================================================================================================  */
+
+#controls {
+  display: flex;
+  gap: 16px;
+  width: 422px;
+  height: 40px;
+  padding: 32px;
+  margin-right: auto;
+  margin-bottom: 16px;
+  margin-left: auto;
+}
+
+#controls,
+#boxes {
+  border-radius: 8px;
+  background: #f6f6fe;
+}
+
+[type="number"] {
+  color: #2e2f42;
+  font-family: Montserrat;
+  font-style: normal;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  display: flex;
+  padding: 8px 50px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  border: 1px solid #808080;
+  max-width: 150px;
+  max-height: 40px;
+}
+
+[data-create],
+[data-destroy] {
+  color: #fff;
+
+  font-family: Montserrat;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  border-radius: 8px;
+  border-color: transparent;
+  display: flex;
+  width: 120px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+[data-create] {
+  background-color: #4e75ff;
+}
+
+[data-create]:hover,
+[data-create]:focus {
+  background-color: #6c8cff;
+}
+
+[data-destroy] {
+  background-color: #ff4e4e;
+}
+
+[data-destroy]:hover,
+[data-destroy]:focus {
+  background-color: #ff7070;
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  padding: 32px;
+  min-height: 160px;
+  width: 422px;
+  margin-right: auto;
+
+  margin-left: auto;
+}
